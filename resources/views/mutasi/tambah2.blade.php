@@ -1,24 +1,33 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Tugas PWEB A</title>
-</head>
-<body>
-    <h3>Tugas PWEB Query Builder</h3>
+@extends('layout.bahagia')
 
-	<a href="/mutasi"> Kembali</a>
+   @section('title', 'Menambah Data Mutasi')
+   @section('judulhalaman', 'Tambah Data Mutasi')
+
+   @section('konten')
+	<a href="/mutasi"> <u>Kembali</u></a>
 
 	<br/>
 	<br/>
 
 	<form action="/mutasi/store" method="post">
 		{{ csrf_field() }}
-		ID Pegawai <input type="number" name="idpegawai" required="required"> <br/>
-		Departemen <input type="text" name="departemen" required="required"> <br/>
-		Sub Departemen <input type="text" name="subdepartemen" required="required"> <br/>
-		Mulai Bertugas <input type="datetime-local" name="mulaibertugas" required="required"> <br/>
-		<input type="submit" value="Simpan Data">
+        <div class="form-group">
+            <label for="idpegawai" class="col-sm-2 control-label">ID Pegawai :</label>
+		    <input type="number" name="idpegawai" required="required"> <br/>
+        </div>
+        <div class="form-group">
+            <label for="departemen" class="col-sm-2 control-label">Departemen :</label>
+		    <input type="text" name="departemen" required="required"> <br/>
+        </div>
+		<div class="form-group">
+            <label for="subdepartemen" class="col-sm-2 control-label">Sub Departemen :</label>
+		    <input type="text" name="subdepartemen" required="required"> <br/>
+        </div>
+		<div class="form-group">
+            <label for="mulaibertugas" class="col-sm-2 control-label">Mulai Bertugas :</label>
+		    <input type="datetime-local" name="mulaibertugas" required="required"> <br/>
+        </div>
+		<p style="text-align: center"><input type="submit" class="btn btn-primary" value="Simpan Data"></p>
 	</form>
 
-</body>
-</html>
+    @endsection

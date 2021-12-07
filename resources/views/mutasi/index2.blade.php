@@ -1,17 +1,15 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Tugas PWEB A</title>
-</head>
-<body>
-	<h3>Tugas PWEB Query Builder</h3>
+@extends('layout.bahagia')
 
+   @section('title', 'Data Mutasi Pegawai')
+   @section('judulhalaman', 'Data Pegawai Mutasi')
+
+   @section('konten')
 	<a href="/mutasi/tambah"> + Tambah Pegawai Baru</a>
 
 	<br/>
 	<br/>
 
-	<table border="1">
+	<table class="table table-bordered">
 		<tr>
             <th>ID</th>
 			<th>ID Pegawai</th>
@@ -28,14 +26,12 @@
 			<td>{{ $m->SubDepartemen }}</td>
             <td>{{ $m->MulaiBertugas }}</td>
 			<td>
-				<a href="/mutasi/edit/{{ $m->ID }}">Edit</a>
+				<a class="btn btn-warning btn-sm" href="/mutasi/edit/{{ $m->ID }}">Edit</a>
 				|
-				<a href="/mutasi/hapus/{{ $m->ID }}">Delete</a>
+				<a class="btn btn-danger btn-sm" href="/mutasi/hapus/{{ $m->ID }}">Delete</a>
 			</td>
 		</tr>
 		@endforeach
 	</table>
 
-
-</body>
-</html>
+@endsection
