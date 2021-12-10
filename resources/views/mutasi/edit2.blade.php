@@ -15,7 +15,11 @@
 		<input type="hidden" name="id" value="{{ $m->ID }}"> <br/>
         <div class="form-group">
             <label for="idpegawaimutasi" class="col-sm-2 control-label">ID Pegawai :</label>
-		    <input type="number" name="idpegawai" required="required" value="{{ $m->IDPegawai }}"> <br/>
+            <select name="idpegawai" >
+                @foreach($pegawai as $p)
+                <option value="{{ $p->pegawai_id }}" @if ($p->pegawai_id === $m->IDPegawai ) selected="selected" @endif>{{ $p->pegawai_nama }}</option>
+                @endforeach
+            </select>
         </div>
         <div class="form-group">
             <label for="departemen" class="col-sm-2 control-label">Departemen :</label>

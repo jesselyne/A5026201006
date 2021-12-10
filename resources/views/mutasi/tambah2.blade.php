@@ -13,7 +13,11 @@
 		{{ csrf_field() }}
         <div class="form-group">
             <label for="idpegawai" class="col-sm-2 control-label">ID Pegawai :</label>
-		    <input type="number" name="idpegawai" required="required"> <br/>
+            <select name="idpegawai" >
+                @foreach($pegawai as $p)
+                <option value="{{ $p->pegawai_id }}">{{ $p->pegawai_nama }}</option>
+                @endforeach
+            </select>
         </div>
         <div class="form-group">
             <label for="departemen" class="col-sm-2 control-label">Departemen :</label>

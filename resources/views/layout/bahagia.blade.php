@@ -25,7 +25,7 @@
         <a href="/pegawai" class="w3-bar-item w3-button">Pegawai</a>
         <a href="/absen" class="w3-bar-item w3-button">Absen</a>
         <a href="/mutasi" class="w3-bar-item w3-button">Mutasi</a>
-        <a href="#" class="w3-bar-item w3-button">(next week)</a>
+        <a href="/sepeda" class="w3-bar-item w3-button">Sepeda</a>
         <a href="#" class="w3-bar-item w3-button">(next week)</a>
     </div>
     <div id="main">

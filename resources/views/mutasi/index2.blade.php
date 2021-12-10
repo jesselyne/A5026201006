@@ -11,7 +11,7 @@
 
 	<table class="table table-bordered">
 		<tr>
-            <th>ID</th>
+            <th>Nama Pegawai</th>
 			<th>ID Pegawai</th>
 			<th>Departemen</th>
 			<th>Sub Departemen</th>
@@ -20,7 +20,7 @@
 		</tr>
 		@foreach($mutasi as $m)
 		<tr>
-            <td>{{ $m->ID }}</td>
+            <td>{{ $m->pegawai_nama }}</td>
 			<td>{{ $m->IDPegawai }}</td>
 			<td>{{ $m->Departemen }}</td>
 			<td>{{ $m->SubDepartemen }}</td>
@@ -33,5 +33,6 @@
 		</tr>
 		@endforeach
 	</table>
+    {{ $mutasi->links() }}
 
 @endsection
