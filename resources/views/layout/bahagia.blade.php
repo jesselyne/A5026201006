@@ -26,12 +26,12 @@
         <a href="/absen" class="w3-bar-item w3-button">Absen</a>
         <a href="/mutasi" class="w3-bar-item w3-button">Mutasi</a>
         <a href="/sepeda" class="w3-bar-item w3-button">Sepeda</a>
-        <a href="#" class="w3-bar-item w3-button">(next week)</a>
+        <a href="/nilaikuliah" class="w3-bar-item w3-button">Nilai Kuliah</a>
     </div>
     <div id="main">
         <div class="w3-light-grey">
           <p><button id="openNav" class="w3-button w3-light-grey w3-xlarge" onclick="sidebar_open()">&#9776;</button> <b>PWEB A </b></p>
-          <div class="w3-container"><p><img src="/images/foto_jess.jpg" alt="foto jesselyne" width="75">  Jesselyne Amadea - 5026201006</p>
+          <div class="w3-container"><p><img src="/images/foto_jess.jpg" alt="foto jesselyne" width="75" style="border-radius: 100px;">  Jesselyne Amadea - 5026201006</p>
           </div>
         </div>
 

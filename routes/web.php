@@ -66,3 +66,8 @@ Route::post('/sepeda/update','SepedaController@update');
 Route::get('/sepeda/hapus/{id}','SepedaController@hapus');
 Route::get('/sepeda/cari','SepedaController@cari');
 Route::get('/sepeda/view/{id}','SepedaController@detail');
+
+//route CRUD UAS nilaikuliah
+Route::get('/nilaikuliah','NilaiController@index');
+Route::get('/nilaikuliah/tambah','NilaiController@tambah');
+Route::post('/nilaikuliah/store','NilaiController@store');

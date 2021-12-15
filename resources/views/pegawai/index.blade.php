@@ -5,7 +5,6 @@
 
    @section('konten')
 	<a href="/pegawai/tambah"> + Tambah Pegawai Baru</a>
-
 	<br/>
 	<br/>
     <div class="container" align="center">
@@ -26,7 +25,7 @@
 			<td>{{ $p->pegawai_nama }}</td>
 			<td>{{ $p->pegawai_alamat }}</td>
 			<td>
-                <a class="btn btn-default btn-sm" href="/pegawai/view/{{ $p->pegawai_id }}">View Detail</a>
+                <a class="btn btn-info btn-sm" href="/pegawai/view/{{ $p->pegawai_id }}">View Detail</a>
 				|
 				<a class="btn btn-warning btn-sm" href="/pegawai/edit/{{ $p->pegawai_id }}">Edit</a>
 				|
