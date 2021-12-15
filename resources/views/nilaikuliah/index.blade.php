@@ -32,7 +32,7 @@
                     <p>A</p>
                 @endif
             </td>
-            <td>{{ $n-> $n->SKS * $n->NilaiAngka }} </td>
+            <td>{{ $n->SKS * $n->NilaiAngka }} </td>
 		</tr>
 		@endforeach
 	</table>
